@@ -1,0 +1,61 @@
+1.向量的声明及初始化
+  vector<int> a ;                                //声明一个int型向量a
+        vector<int> a(10) ;                            //声明一个初始大小为10的向量
+        vector<int> a(10, 1) ;                         //声明一个初始大小为10且初始值都为1的向量
+        vector<int> b(a) ;                             //声明并用向量a初始化向量b
+        vector<int> b(a.begin(), a.begin()+3) ;        //将a向量中从第0个到第2个(共3个)作为向量b的初始值
+  用数组初始化向量    
+      int n[] = {1, 2, 3, 4, 5} ;
+      vector<int> a(n, n+5) ;              //将数组n的前5个元素作为向量a的初值
+      vector<int> a(&n[1], &n[4]) ;        //将n[1] - n[4]范围内的元素作为向量a的初值
+2.元素的输入及访问
+   vector<int> a(10, 0) ;      //大小为10初值为0的向量a
+
+        //对其中部分元素进行输入
+        cin >>a[2] ;
+        cin >>a[5] ;
+        cin >>a[6] ;
+      //全部输出
+         int i ;
+         for(i=0; i<a.size(); i++)
+         cout<<a[i]<<" " ;
+        //全部输出
+         vector<int>::iterator t ;
+         for(t=a.begin(); t!=a.end(); t++)
+         cout<<*t<<" " ;     //*t 为指针的间接访问形式, 意思是访问t所指向的元素值。
+3.向量的基本操作
+    1>. a.size()                 //获取向量中的元素个数
+
+
+    2>. a.empty()                //判断向量是否为空
+
+
+    3>. a.clear()                //清空向量中的元素
+
+
+    4>. 复制
+        a = b ;            //将b向量复制到a向量中
+
+
+    5>. 比较
+        保持 ==、!=、>、>=、<、<= 的惯有含义 ;
+        如: a == b ;    //a向量与b向量比较, 相等则返回1
+
+
+    6>. 插入 - insert
+        ①、 a.insert(a.begin(), 1000);            //将1000插入到向量a的起始位置前
+        
+        ②、 a.insert(a.begin(), 3, 1000) ;        //将1000分别插入到向量元素位置的0-2处(共3个元素)
+        
+        ③、 vector<int> a(5, 1) ;
+            vector<int> b(10) ;
+            b.insert(b.begin(), a.begin(), a.end()) ;        //将a.begin(), a.end()之间的全部元素插入到b.begin()前
+
+
+    7>. 删除 - erase
+        ①、 b.erase(b.begin()) ;                     //将起始位置的元素删除
+        ②、 b.erase(b.begin(), b.begin()+3) ;        //将(b.begin(), b.begin()+3)之间的元素删除
+
+
+    8>. 交换 - swap
+        b.swap(a) ;            //a向量与b向量进行交换
