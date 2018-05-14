@@ -20,11 +20,6 @@
 			<artifactId>jaxb-api</artifactId>
 			<version>2.3.0</version>
 		</dependency>
-		<dependency>  
-    <groupId>org.springframework</groupId>  
-    <artifactId>spring-beans</artifactId>  
-    <version>4.2.5.RELEASE</version>  
-</dependency> 
 	</dependencies>
 
 	<build>
@@ -40,7 +35,7 @@
 					<scriptAction>drop-and-create</scriptAction>
 					<databaseAction>drop-and-create</databaseAction>
 					<vendor>hibernate</vendor>
-					<packageToScan>edu.zut.cs.javaee.express</packageToScan>
+					<packageToScan>edu.zut.cs.express</packageToScan>
 					<jdbcDriver>com.mysql.jdbc.Driver</jdbcDriver>
 					<jdbcUrl>jdbc:mysql://202.196.37.91:3306/express</jdbcUrl>
 					<jdbcUser>zutnlp</jdbcUser>
