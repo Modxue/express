@@ -22,12 +22,18 @@ public class user extends BaseEntity {
 	@Column(name = "USERNAME")
 	String username;
 
-	@Column(name = "PASSWORD")
-	String password;
-
-	@Column(name = "EMAIL")
-	String email;
-
+	@Column(name = "PHONENUMBER")
+	String phonenumber;
+	
+	@Column(name = "ORDERNUM")
+	String ordernum;
+	
+	@Column(name = "KIND")
+	String kind;
+	
+	@Column(name = "TIME")
+	String time;
+	
 	public Group getGroup() {
 		return group;
 	}
@@ -47,21 +53,36 @@ public class user extends BaseEntity {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-
-	public String getPassword() {
-		return password;
+	
+	public String getphonenumber() {
+		return phonenumber;
+	}
+	public void setPhoneNumber(String phonenumber) {
+		this.phonenumber = phonenumber;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public String getordernum() {
+		return ordernum;
+	}
+	
+	public void setOrderNum(String ordernum) {
+		this.ordernum=ordernum;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getkind() {
+		return kind;
+	}
+	
+	public void setKind(String kind) {
+		this.kind=kind;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public String gettime() {
+		return time;
 	}
-
+	
+	public void setTime(String time) {
+		this.time=time;
+	}
+	
 }
