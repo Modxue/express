@@ -12,7 +12,7 @@ import edu.zut.cs.express.admin.domain.Group;
 
 @Table(name = "T_ADMIN_USER")
 @Entity
-public class user extends BaseEntity {
+public class User_use extends BaseEntity {
 
 	/**
 	 * 
@@ -22,7 +22,6 @@ public class user extends BaseEntity {
 	@Column(name = "USERNAME")
 	String username;
 
-
 	@Column(name = "PHONENUMBER")
 	String phonenumber;
 	
@@ -30,26 +29,13 @@ public class user extends BaseEntity {
 	String ordernum;
 	
 	@Column(name = "KIND")
-	String kind1;
-	
-	@Column(name = "TIME")
-	String time1;
-
-	@Column(name = "PASSWORD")
-	String password;
-
-	@Column(name = "EMAIL")
-	String email;
+	String kind;
 	
 	@Column(name = "TIME")
 	String time;
-	
-	@Column(name = "KIND")
-	String kind;
 
-	@Column(name = "EXPRESS_NUMBER")
-	String express_number;
-
+	@Column(name ="MONEY")
+	String money;
 	
 	public Group getGroup() {
 		return group;
@@ -87,40 +73,27 @@ public class user extends BaseEntity {
 	}
 
 	public String getkind() {
-		return kind1;
+		return kind;
 	}
 	
 	public void setKind(String kind) {
-		this.kind1=kind;
-	}
-	public String getTime() {
-		return time1;
-	}
-
-	public void setTime1(String time) {
-		this.time1 = time;
-	}
-	public String getKind() {
-		return kind1;
-	}
-
-	public void setKind1(String kind) {
-		this.kind1 = kind;
-	}
-	public String getExpress_number() {
-		return express_number;
-	}
-
-	public void setExpress_number(String express_number) {
-		this.express_number = express_number;
+		this.kind=kind;
 	}
 
 	public String gettime() {
-		return time1;
+		return time;
 	}
 	
 	public void setTime(String time) {
-		this.time1=time;
+		this.time=time;
+	}
+	
+	public String getMoney() {
+		return money;
+	}
+
+	public void setMoney(String money) {
+		this.money = money;
 	}
 	
 }
