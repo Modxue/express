@@ -38,7 +38,7 @@ public class AdminEntityGenerator extends GenericGenerator {
 		for (int i = 0; i < 10; i++) {
 			user u = new user();
 			u.setUsername("username_" + i);
-			u.setPassword("password_" + i);
+		
 			u.setGroup(g);
 			this.userManager.save(u);
 		}

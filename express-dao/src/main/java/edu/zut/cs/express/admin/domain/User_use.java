@@ -33,6 +33,9 @@ public class User_use extends BaseEntity {
 	
 	@Column(name = "TIME")
 	String time;
+
+	@Column(name ="MONEY")
+	String money;
 	
 	public Group getGroup() {
 		return group;
@@ -83,6 +86,14 @@ public class User_use extends BaseEntity {
 	
 	public void setTime(String time) {
 		this.time=time;
+	}
+	
+	public String getMoney() {
+		return money;
+	}
+
+	public void setMoney(String money) {
+		this.money = money;
 	}
 	
 }
