@@ -12,7 +12,7 @@ import edu.zut.cs.express.admin.domain.Group;
 
 @Table(name = "T_ADMIN_USER")
 @Entity
-public class user extends BaseEntity {
+public class user_order extends BaseEntity {
 
 	/**
 	 * 
@@ -21,19 +21,6 @@ public class user extends BaseEntity {
 
 	@Column(name = "USERNAME")
 	String username;
-
-
-	@Column(name = "PHONENUMBER")
-	String phonenumber;
-	
-	@Column(name = "ORDERNUM")
-	String ordernum;
-	
-	@Column(name = "KIND")
-	String kind1;
-	
-	@Column(name = "TIME")
-	String time1;
 
 	@Column(name = "PASSWORD")
 	String password;
@@ -49,7 +36,6 @@ public class user extends BaseEntity {
 
 	@Column(name = "EXPRESS_NUMBER")
 	String express_number;
-
 	
 	public Group getGroup() {
 		return group;
@@ -70,42 +56,35 @@ public class user extends BaseEntity {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
-	public String getphonenumber() {
-		return phonenumber;
-	}
-	public void setPhoneNumber(String phonenumber) {
-		this.phonenumber = phonenumber;
+
+	public String getPassword() {
+		return password;
 	}
 
-	public String getordernum() {
-		return ordernum;
-	}
-	
-	public void setOrderNum(String ordernum) {
-		this.ordernum=ordernum;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
-	public String getkind() {
-		return kind1;
+	public String getEmail() {
+		return email;
 	}
-	
-	public void setKind(String kind) {
-		this.kind1=kind;
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getTime() {
-		return time1;
+		return time;
 	}
 
-	public void setTime1(String time) {
-		this.time1 = time;
+	public void setTime(String time) {
+		this.time = time;
 	}
 	public String getKind() {
-		return kind1;
+		return kind;
 	}
 
-	public void setKind1(String kind) {
-		this.kind1 = kind;
+	public void setKind(String kind) {
+		this.kind = kind;
 	}
 	public String getExpress_number() {
 		return express_number;
@@ -115,12 +94,4 @@ public class user extends BaseEntity {
 		this.express_number = express_number;
 	}
 
-	public String gettime() {
-		return time1;
-	}
-	
-	public void setTime(String time) {
-		this.time1=time;
-	}
-	
 }

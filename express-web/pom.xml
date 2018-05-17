@@ -7,4 +7,20 @@
   </parent>
   <artifactId>express-web</artifactId>
   <packaging>war</packaging>
+  <dependencies>
+      <dependency>
+         <groupId>edu.zut.cs.express</groupId>
+         <artifactId>express-service</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+      <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
+  </dependencies>>
+  
+  
 </project>

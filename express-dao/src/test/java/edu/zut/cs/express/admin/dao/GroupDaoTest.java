@@ -1,7 +1,5 @@
 package edu.zut.cs.express.admin.dao;
 
-import static org.junit.Assert.assertEquals;
-
 import java.util.List;
 
 import org.apache.log4j.Logger;
