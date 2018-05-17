@@ -5,7 +5,6 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import edu.zut.cs.express.admin.domain.Login;
 import edu.zut.cs.express.admin.domain.Manger;
 import edu.zut.cs.express.base.dao.GenericDaoTestCase;
 

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import edu.zut.cs.express.admin.domain.Group;
 import edu.zut.cs.express.base.service.GenericTreeManagerTestCase;
 
+
 public class GroupManagerTest extends GenericTreeManagerTestCase<Long, Group, GroupManager> {
 
 	GroupManager groupManager;
@@ -14,9 +15,9 @@ public class GroupManagerTest extends GenericTreeManagerTestCase<Long, Group, Gr
 		this.groupManager = groupManager;
 		this.manager = this.groupManager;
 	}
-
 	public GroupManagerTest() {
 		super(Group.class);
+
 	}
 
 }
