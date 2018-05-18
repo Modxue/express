@@ -16,6 +16,7 @@ public class StaffDaoTest extends GenericDaoTestCase<Long, Staff, StaffDao> {
 	@Test
 	public void testFindAll() {
 
+		@SuppressWarnings("unused")
 		List<Staff> result = this.staffDao.findAll();
 
 	}
