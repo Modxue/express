@@ -3,9 +3,9 @@ package edu.zut.cs.express.admin.service;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import edu.zut.cs.express.admin.domain.Group;
-import edu.zut.cs.express.admin.domain.user;
 import edu.zut.cs.express.base.service.GenericGenerator;
+import edu.zut.cs.express.manager.domain.Group;
+import edu.zut.cs.express.manager.domain.user;
 
 public class AdminEntityGenerator extends GenericGenerator {
 

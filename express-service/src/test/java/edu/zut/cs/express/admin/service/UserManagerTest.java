@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import edu.zut.cs.express.admin.domain.user;
+import edu.zut.cs.express.manager.domain.user;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = AdminServiceConfig.class)

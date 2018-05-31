@@ -17,6 +17,12 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+
+/*
+ * In project development, using JPA's @mappedsuperclass annotations encapsulates 
+ multiple attributes of the entity class into different non-entity classes.
+ * 
+ */
 @MappedSuperclass
 @JsonIgnoreProperties(value = { "hibernateLazyInitializer", "handler" })
 public class BaseEntity extends BaseDomain {
