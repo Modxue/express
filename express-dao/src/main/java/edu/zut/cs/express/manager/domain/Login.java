@@ -19,31 +19,44 @@ public class Login extends BaseEntity {
 	 */
 	private static final long serialVersionUID = -4376674977047164142L;
 
-	@Column(name = "USERNAME")
+	@Column(name = "USERNAME")//用户姓名
 	String username;
-
-	@Column(name = "PASSWORD")
+	
+    @Column(name="USER_ID")//用户ID
+    
+    String user_id;
+	@Column(name = "PASSWORD")//用户登录密码
 	String password;
 
-	@Column(name = "EMAIL")
+	@Column(name="TIME")//用户登陆时间
+	String time;
+	@Column(name = "EMAIL")//用户邮箱
 	String email;
-
-	public Group getGroup() {
-		return group;
-	}
-
-	public void setGroup(Group group) {
-		this.group = group;
-	}
-	
-	@ManyToOne
-	@JoinColumn(name = "GROUP_ID")
-	Group group;
-
+    @Column(name="MESSAGE")//用户留言内容
+    String message;
+    public String getMESSAGE() {
+    	return message;
+    }
+    public void setMESSAGE(String message) {
+    	this.message=message;
+    }
 	public String getUsername() {
 		return username;
 	}
 
+	public String getUSER_ID() {
+		return user_id;
+	}
+	
+	public void setUSER_ID(String user_id) {
+		this.user_id=user_id;
+	}
+	public String getTIME() {
+		return time;
+	}
+	public void setTIME(String time) {
+		this.time=time;
+	}
 	public void setUsername(String username) {
 		this.username = username;
 	}
