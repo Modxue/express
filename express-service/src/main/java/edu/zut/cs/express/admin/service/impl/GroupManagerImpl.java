@@ -1,4 +1,4 @@
-package edu.zut.cs.express.admin.sevice.impl;
+package edu.zut.cs.express.admin.service.impl;
 
 import javax.transaction.Transactional;
 
