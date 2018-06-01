@@ -11,9 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import edu.zut.cs.express.admin.service.AdminServiceConfig;
 import edu.zut.cs.express.feedback.domain.FeedBack;
 import edu.zut.cs.express.feedback.sevice.FeedbackManager;
+import edu.zut.cs.express.manager.service.AdminServiceConfig;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = AdminServiceConfig.class)
