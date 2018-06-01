@@ -15,13 +15,9 @@ public class GenericDaoTestCase<PK extends Serializable, T extends BaseEntity, D
 		extends BaseAbstractTestCase {
 
 	protected PK id;
-
 	protected T entity;
-
 	protected D dao;
-
 	protected List<T> list;
-
 	@Before
 	public void setUp() throws Exception {
 
