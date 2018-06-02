@@ -1,4 +1,4 @@
-package edu.zut.cs.express.customer.domain;
+package edu.zut.cs.express.journal.daomain;
 
 
 import javax.persistence.Column;
@@ -9,34 +9,31 @@ import javax.persistence.Table;
 
 import edu.zut.cs.express.base.domain.BaseEntity;
 
-@Table(name = "T_ADMIN_USER")
+@Table(name = "T_UJournal")
 @Entity
-public class User_use extends BaseEntity {
+public class UJournal extends BaseEntity {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -4376674977047164142L;
 
-	@Column(name = "USERNAME")
+	@Column
 	String username;
 
-	@Column(name = "PASSWORD")
-	String password;
-
-	@Column(name = "EMAIL")
+	@Column
 	String email;
 	
-	@Column(name = "TIME")
+	@Column
 	String time;
 	
-	@Column(name = "KIND")
+	@Column
 	String kind;
 
-	@Column(name = "EXPRESS_NUMBER")
+	@Column
 	String express_number;
 	
-	@Column(name ="EXPRESS_PHONE")
+	@Column
 	String express_phone;
 
 	public String getUsername() {
@@ -47,13 +44,6 @@ public class User_use extends BaseEntity {
 		this.username = username;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
 
 	public String getEmail() {
 		return email;
