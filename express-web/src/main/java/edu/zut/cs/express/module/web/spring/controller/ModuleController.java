@@ -1,11 +1,12 @@
 package edu.zut.cs.express.module.web.spring.controller;
 
-import edu.zut.cs.express.base.web.spring.controller.GenericTreeController;
-import edu.zut.cs.express.module.domain.Module;
-import edu.zut.cs.express.module.service.ModuleManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import edu.zut.cs.express.base.web.spring.controller.GenericTreeController;
+import edu.zut.cs.express.module.domain.Module;
+import edu.zut.cs.express.module.service.ModuleManager;
 
 @Controller
 @RequestMapping("/module")

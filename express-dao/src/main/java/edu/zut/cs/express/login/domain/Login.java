@@ -1,4 +1,4 @@
-package edu.zut.cs.express.manager.domain;
+package edu.zut.cs.express.login.domain;
 
 
 import javax.persistence.Column;
@@ -7,44 +7,54 @@ import javax.persistence.Table;
 
 import edu.zut.cs.express.base.domain.BaseEntity;
 
-@Table(name = "MANGER")
+@Table(name = "T_Login")
 @Entity
-public class Manger extends BaseEntity {
+public class Login extends BaseEntity {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -4376674977047164142L;
 
-	@Column(name = "MANGERNAME")
-	String mangername;
+	@Column(name = "USERNAME")
+	String username;
+	
+	@Column(name="USERID")
+	String userid;
 
+	@Column(name="SEX")
+	String sex;
+	
 	@Column(name = "PASSWORD")
 	String password;
 
 	@Column(name = "EMAIL")
 	String email;
 
-	/*public Group getGroup() {
-		return group;
-	}
-
-	public void setGroup(Group group) {
-		this.group = group;
-	}
-	
-	@ManyToOne
-	@JoinColumn(name = "GROUP_ID")
-	Group group;*/
 
 	public String getUsername() {
-		return mangername;
+		return username;
 	}
 
 	public void setUsername(String username) {
-		this.mangername = username;
+		this.username = username;
 	}
 
+	public String getUserid() {
+		return userid;
+	}
+	
+	public void setUserid(String userid) {
+		this.userid=userid;
+	}
+	
+	public String getSex() {
+		return sex;
+	}
+	
+	public void setSex(String sex) {
+		this.sex=sex;
+	}
 	public String getPassword() {
 		return password;
 	}

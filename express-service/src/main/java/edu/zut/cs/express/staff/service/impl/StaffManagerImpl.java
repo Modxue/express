@@ -18,28 +18,21 @@ import edu.zut.cs.express.staff.service.StaffManager;
 public class StaffManagerImpl extends GenericManagerImpl<Staff, Long> implements StaffManager {
 
 	StaffDao staffDao;
-
-	@Autowired
-	public void setStudentDao(StaffDao staffDao) {
-		this.staffDao = staffDao;
-		this.dao = this.staffDao;
-	}
 	
 	@Override
 	public List<Staff> findByIDnum(String idnum) {
 
 		// 创建查询条件数据对象
 		Staff queryObject = new Staff();
+		queryObject.setDateCreated(null);
+		queryObject.setDateModified(null);
 		queryObject.setIDnum(idnum);
 		// 创建匹配器，即如何使用查询条件
 		// 创建匹配器，即如何使用查询条件
 		ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
-				/*.withStringMatcher(StringMatcher.CONTAINING) // 改变默认字符串匹配方式：模糊查询
-				.withIgnoreCase(true) // 改变默认大小写忽略方式：忽略大小写
-				.withMatcher("postcode", GenericPropertyMatchers.startsWith()); // 地址采用“开始匹配”的方式查询
-*/				.withMatcher("idnum", GenericPropertyMatchers.startsWith())
-				.withIgnorePaths("dateCreated", "dateModified");
-		
+				.withStringMatcher(StringMatcher.CONTAINING) // 改变默认字符串匹配方式：模糊查询
+				.withIgnoreCase(true) // 改变默认大小写忽略方式：忽略大小写			
+				.withMatcher("idnum", GenericPropertyMatchers.startsWith());  // 地址采用“开始匹配”的方式查询
 		// 创建实例并查询
 		Example<Staff> ex = Example.of(queryObject, matcher);
 		List<Staff> result = dao.findAll(ex);
@@ -51,21 +44,21 @@ public class StaffManagerImpl extends GenericManagerImpl<Staff, Long> implements
 		
 		// 创建查询条件数据对象
 		Staff queryObject = new Staff();
-		queryObject.setDateCreated(null);
-		queryObject.setDateModified(null);
 		queryObject.setName(name);
 		// 创建匹配器，即如何使用查询条件
 		ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
-				/*.withMatcher("name", GenericPropertyMatchers.startsWith()) // 姓名采用“开始匹配”的方式查询
+				.withMatcher("name", GenericPropertyMatchers.startsWith()) // 姓名采用“开始匹配”的方式查询
 				.withIgnorePaths("dateCreated", "dateModified"); // 忽略属性：是否关注。因为是基本类型，需要忽略掉
-*/				.withStringMatcher(StringMatcher.CONTAINING)
-				.withIgnoreCase(true)//忽略大小写
-				.withMatcher("name", GenericPropertyMatchers.startsWith());
 		// 创建实例并查询
 		Example<Staff> ex = Example.of(queryObject, matcher);
 		List<Staff> result = dao.findAll(ex);
 		return result;
 	}
 
+	@Autowired
+	public void setStudentDao(StaffDao staffDao) {
+		this.staffDao = staffDao;
+		this.dao = this.staffDao;
+	}
 
 }

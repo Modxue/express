@@ -6,8 +6,8 @@ import javax.persistence.Table;
 
 import edu.zut.cs.express.base.domain.BaseEntity;
 
-@Table(name = "T_Staff")
 @Entity
+@Table(name = "T_Staff")
 public class Staff extends BaseEntity {
 
 	/**
@@ -22,42 +22,41 @@ public class Staff extends BaseEntity {
 	String name;
 	
 	@Column
-	String sex;
+	int age;
 	
 	@Column
-	int age;
+	String sex;
 
-	
 	public String getIDnum() {
 		return idnum;
 	}
 
-	public void setIDnum(String idnum) {
-		this.idnum = idnum;
-	}
-
 	public String getName() {
 		return name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+	
+	public void setIDnum(String idnum) {
+		this.idnum = idnum;
 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public int getAge() {
-		return age;
-	}
-
 	public void setAge(int age) {
 		this.age = age;
-	}
-
-	public String getSex() {
-		return sex;
 	}
 
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-
+	
 }

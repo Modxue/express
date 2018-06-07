@@ -1,8 +1,5 @@
 package edu.zut.cs.express.Finance.service;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
 import java.util.List;
 
 import org.junit.Before;
