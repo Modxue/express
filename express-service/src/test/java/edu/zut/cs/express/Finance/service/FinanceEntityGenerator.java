@@ -5,7 +5,7 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import edu.zut.cs.express.Finance.daomain.Finance;
+import edu.zut.cs.express.Finance.domain.Finance;
 import edu.zut.cs.express.base.service.GenericGenerator;
 
 public class FinanceEntityGenerator extends GenericGenerator{

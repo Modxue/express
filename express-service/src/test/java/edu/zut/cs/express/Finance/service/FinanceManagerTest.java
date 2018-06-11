@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import edu.zut.cs.express.Finance.daomain.Finance;
+import edu.zut.cs.express.Finance.domain.Finance;
 import edu.zut.cs.express.base.service.GenericManagerTestCase;
 
 public class FinanceManagerTest extends GenericManagerTestCase<Long,Finance,FinanceManager>{
