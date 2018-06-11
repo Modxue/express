@@ -10,7 +10,7 @@ import org.springframework.data.domain.ExampleMatcher.StringMatcher;
 import org.springframework.stereotype.Component;
 
 import edu.zut.cs.express.Finance.dao.FinanceDao;
-import edu.zut.cs.express.Finance.daomain.Finance;
+import edu.zut.cs.express.Finance.domain.Finance;
 import edu.zut.cs.express.Finance.service.FinanceManager;
 import edu.zut.cs.express.base.service.impl.GenericManagerImpl;
 

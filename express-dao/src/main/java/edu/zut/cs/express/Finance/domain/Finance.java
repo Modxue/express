@@ -1,4 +1,4 @@
-package edu.zut.cs.express.Finance.daomain;
+package edu.zut.cs.express.Finance.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
