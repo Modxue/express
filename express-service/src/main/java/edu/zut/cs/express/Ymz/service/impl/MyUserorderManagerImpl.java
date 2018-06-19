@@ -51,7 +51,7 @@ public class MyUserorderManagerImpl extends GenericManagerImpl<MyUserorder, Long
 		MyUserorder queryObject = new MyUserorder();
 		queryObject.setDateCreated(null);
 		queryObject.setDateModified(null);
-		queryObject.setUsername(name);
+		queryObject.setname(name);
 		
 		ExampleMatcher matcher = ExampleMatcher.matching()
 				.withStringMatcher(StringMatcher.CONTAINING)
