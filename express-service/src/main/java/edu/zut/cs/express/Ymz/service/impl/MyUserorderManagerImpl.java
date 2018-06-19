@@ -14,6 +14,10 @@ import edu.zut.cs.express.Ymz.domain.MyUserorder;
 import edu.zut.cs.express.Ymz.service.MyUserorderManager;
 import edu.zut.cs.express.base.service.impl.GenericManagerImpl;
 
+/**
+ * @author 杨曼珍
+ *
+ */
 @Component
 public class MyUserorderManagerImpl extends GenericManagerImpl<MyUserorder, Long> implements MyUserorderManager{
 
@@ -47,7 +51,7 @@ public class MyUserorderManagerImpl extends GenericManagerImpl<MyUserorder, Long
 		MyUserorder queryObject = new MyUserorder();
 		queryObject.setDateCreated(null);
 		queryObject.setDateModified(null);
-		queryObject.setUsername(name);
+		queryObject.setname(name);
 		
 		ExampleMatcher matcher = ExampleMatcher.matching()
 				.withStringMatcher(StringMatcher.CONTAINING)

@@ -6,6 +6,10 @@ import javax.persistence.Table;
 
 import edu.zut.cs.express.base.domain.BaseEntity;
 
+/**
+ * @author 杨曼珍
+ *
+ */
 @Table(name = "T_USER_ORDER")
 @Entity
 public class MyUserorder extends BaseEntity {
@@ -31,12 +35,12 @@ public class MyUserorder extends BaseEntity {
 	String expnum;
 	
 
-	public String getUsername() {
+	public String getname() {
 		return name;
 	}
 
-	public void setUsername(String username) {
-		this.name = username;
+	public void setname(String name) {
+		this.name = name;
 	}
 
 	public String getEmail() {

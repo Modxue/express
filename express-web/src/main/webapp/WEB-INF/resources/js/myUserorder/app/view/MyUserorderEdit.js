@@ -11,6 +11,10 @@ Ext.define('myUserorder.view.MyUserorderEdit', {
 			width : 300,
 			border : false,
 			items : [ {
+                xtype : 'textfield',
+                name : 'id',
+                fieldLabel : 'ID'
+            },{
 				xtype : 'textfield',
 				name : 'time',
 				fieldLabel : '时间'

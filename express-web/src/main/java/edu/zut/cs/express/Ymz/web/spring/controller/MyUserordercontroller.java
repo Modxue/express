@@ -9,6 +9,10 @@ import edu.zut.cs.express.Ymz.domain.MyUserorder;
 import edu.zut.cs.express.Ymz.service.MyUserorderManager;
 import edu.zut.cs.express.base.web.spring.controller.GenericController;
 
+/**
+ * @author 杨曼珍
+ *
+ */
 @Controller
 @RequestMapping("/Ymz/myUserorder")
 public class MyUserordercontroller extends GenericController<MyUserorder, Long, MyUserorderManager>{
