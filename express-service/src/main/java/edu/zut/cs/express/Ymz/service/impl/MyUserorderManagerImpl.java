@@ -14,6 +14,10 @@ import edu.zut.cs.express.Ymz.domain.MyUserorder;
 import edu.zut.cs.express.Ymz.service.MyUserorderManager;
 import edu.zut.cs.express.base.service.impl.GenericManagerImpl;
 
+/**
+ * @author 杨曼珍
+ *
+ */
 @Component
 public class MyUserorderManagerImpl extends GenericManagerImpl<MyUserorder, Long> implements MyUserorderManager{
 

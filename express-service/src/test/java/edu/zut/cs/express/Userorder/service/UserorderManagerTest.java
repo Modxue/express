@@ -7,6 +7,10 @@ import edu.zut.cs.express.Ymz.domain.MyUserorder;
 import edu.zut.cs.express.Ymz.service.MyUserorderManager;
 import edu.zut.cs.express.base.service.GenericManagerTestCase;
 
+/**
+ * @author 杨曼珍
+ *
+ */
 public class UserorderManagerTest extends GenericManagerTestCase<Long, MyUserorder, MyUserorderManager>{
 
 	MyUserorderManager userorderManager;

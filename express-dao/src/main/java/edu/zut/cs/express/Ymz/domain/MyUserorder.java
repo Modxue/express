@@ -6,6 +6,10 @@ import javax.persistence.Table;
 
 import edu.zut.cs.express.base.domain.BaseEntity;
 
+/**
+ * @author 杨曼珍
+ *
+ */
 @Table(name = "T_USER_ORDER")
 @Entity
 public class MyUserorder extends BaseEntity {
