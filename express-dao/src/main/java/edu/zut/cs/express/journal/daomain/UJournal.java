@@ -7,13 +7,14 @@ import javax.persistence.Table;
 
 import edu.zut.cs.express.base.domain.BaseEntity;
 
+/**
+ * @author GreyYa
+ * 定义实体的属性
+ */
 @Table(name = "T_UJournal")
 @Entity
 public class UJournal extends BaseEntity {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -4376674977047164142L;
 
 	@Column

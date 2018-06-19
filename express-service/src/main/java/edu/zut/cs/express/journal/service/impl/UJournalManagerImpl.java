@@ -14,17 +14,25 @@ import edu.zut.cs.express.journal.daomain.UJournal;
 import edu.zut.cs.express.journal.service.UJournalManager;
 import edu.zut.cs.express.base.service.impl.GenericManagerImpl;
 
+/**
+ * @author GreyYa
+ * 
+ */
 @Component
 public class UJournalManagerImpl extends GenericManagerImpl<UJournal,Long> implements UJournalManager{
 
 	UJournalDao ujournalDao;
-	
+	/**
+	 * @param ujournalDao
+	 */
 	@Autowired
 	public void setUJournalDao(UJournalDao ujournalDao) {
 		this.ujournalDao = ujournalDao;
 		this.dao = this.ujournalDao;
 	}
-	
+	/**
+	 * 接口的实现方法
+	 */
 	@Override
 	public List<UJournal> findByusername(String username) {
 		// 创建查询条件数据对象
@@ -42,14 +50,17 @@ public class UJournalManagerImpl extends GenericManagerImpl<UJournal,Long> imple
 
 	@Override
 	public List<UJournal> findByemail(String email) {
+		//创建查询条件数据对象
 		UJournal queryObject = new UJournal();
 		queryObject.setDateCreated(null);
 		queryObject.setDateModified(null);
 		queryObject.setEmail(email);
-		ExampleMatcher matcher = ExampleMatcher.matching()
+		//创建匹配器
+		ExampleMatcher matcher = ExampleMatcher.matching()//构件对象
 				.withStringMatcher(StringMatcher.CONTAINING)
 				.withIgnoreCase(true)
 				.withMatcher("email", GenericPropertyMatchers.startsWith());
+		//创建实例并查询
 		Example<UJournal> example = Example.of(queryObject,matcher);
 		List<UJournal> result = dao.findAll(example);
 		return result;
