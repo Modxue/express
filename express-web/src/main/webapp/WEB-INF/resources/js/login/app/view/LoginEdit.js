@@ -12,7 +12,7 @@ Ext.define('login.view.LoginEdit', {
 			border : false,
 			items : [ {
                 xtype : 'textfield',
-                name : 'id',
+                name : 'userid',
                 fieldLabel : '用户账号'
             },  {
 				xtype : 'textfield',

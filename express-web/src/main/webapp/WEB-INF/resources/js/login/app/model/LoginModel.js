@@ -17,7 +17,23 @@ Ext.define('login.model.LoginModel', {
 		name : 'sex',
 		type : 'string',
 		sortable : true
-	},  {
+	},{
+		name : 'email',
+		type : 'string',
+		sortable : true
+	},{
+		name : 'password',
+		type : 'string',
+		sortable : true
+	},{
+		name : 'passage',
+		type : 'string',
+		sortable : true
+	},{
+		name : 'satisficing',
+		type : 'string',
+		sortable : true
+	},{
 		name : 'dateCreated',
 		type : 'date',
 		dateFormat : 'time',

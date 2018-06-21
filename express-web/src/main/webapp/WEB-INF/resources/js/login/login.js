@@ -14,7 +14,23 @@ Ext.define('login.LoginModel', {
 						name : 'sex',
 						type : 'string',
 						sortable : true
-					},  {
+					}, {
+						name : 'email',
+						type : 'string',
+						sortable : true
+					},{
+						name : 'password',
+						type : 'string',
+						sortable : true
+					},{
+						name : 'passage',
+						type : 'string',
+						sortable : true
+					},{
+						name : 'satisficing',
+						type : 'string',
+						sortable : true
+					}, {
 						name : 'dateCreated',
 						type : 'date',
 						dateFormat : 'time',
@@ -129,6 +145,33 @@ var loginGrid = new Ext.grid.GridPanel({
 							xtype : 'textfield'
 						}
 					}, {
+						text : "密码",
+						width : 80,
+						sortable : true,
+						dataIndex : 'password',
+						editor : textFieldEditor,
+						field : {
+							xtype : 'textfield'
+						}
+					}, {
+						text : "满意度",
+						width : 80,
+						sortable : true,
+						dataIndex : 'satisficing',
+						editor : textFieldEditor,
+						field : {
+							xtype : 'textfield'
+						}
+					}, {
+						text : "留言信息",
+						width : 120,
+						sortable : true,
+						dataIndex : 'passage',
+						editor : textFieldEditor,
+						field : {
+							xtype : 'textfield'
+						}
+					},{
 						text : "性别",
 						width : 50,
 						sortable : true,
