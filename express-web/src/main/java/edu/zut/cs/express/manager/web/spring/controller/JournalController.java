@@ -20,7 +20,13 @@ public class JournalController extends GenericController<Journal, Long, JournalM
 		String result = "/journal/index";
 		return result;
 	}
-
+	
+	
+	@RequestMapping(method = RequestMethod.GET, value = "/journal.html")
+	public String journal() {
+		String result = "/journal/journal";
+		return result;
+	}
 	
 	@Autowired
 	public void setJournalManager(JournalManager journalManager) {
