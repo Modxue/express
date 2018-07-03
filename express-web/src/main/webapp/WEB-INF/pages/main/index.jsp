@@ -105,13 +105,11 @@
 	  	<li><a href="fangye/register/index.html">用户信息注册</a></li>
 	  	<li><a href="ujournal/index.html">用户使用日志</a></li>
 	  	<li><a href="Ymz/myUserorder/index.html">快递预约</a></li>
-<<<<<<< HEAD
 	  	<li><a href="pay/p.html">支付模块</a></li>
 	  	<li><a href="login/login/index.html">留言模块</a></li>
-=======
 	  	<li><a href="pay/index.html">支付模块</a></li>
 	  	<li><a href="houjie/massage/index.html">留言模块</a></li>
->>>>>>> 6d94e0aabf59e7657bc210174d26f807e60fcce6
+	  	<li><a href="manager/journal/journal.html">ww</a></li>
 	  </ul>
   </div>
 
