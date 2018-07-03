@@ -91,4 +91,11 @@
 	<welcome-file-list>
 		<welcome-file>main/index.html</welcome-file>
 	</welcome-file-list>
+	
+	<listener>
+	    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+
+	
+	
 </web-app>
