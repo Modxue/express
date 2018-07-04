@@ -12,10 +12,6 @@ Ext.define('myFinance.view.MyFinanceEdit', {
             border : false,
             items : [ {
                 xtype : 'textfield',
-                name : 'id',
-                fieldLabel : 'ID'
-            }, {
-                xtype : 'textfield',
                 name : 'name',
                 fieldLabel : '姓名'
             }, {

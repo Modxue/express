@@ -7,14 +7,12 @@ import javax.persistence.Table;
 import edu.zut.cs.express.base.domain.BaseEntity;
 
 /**
- * @author guo
- *
+ * @author Guozhiliang
+ *@Description
+ * @Date 2018年6月27日下午2:04:56
  */
-
-@Table(name = "T_Customer_Pay")
 @Entity
-
-
+@Table(name = "T_Customer_Pay")
 public class Pay extends BaseEntity {
 	
 	private static final long serialVersionUID = -4376674977047164142L;
@@ -31,6 +29,7 @@ public class Pay extends BaseEntity {
 	@Column
 	int manger_money;
 
+	/* 设置获取 */
 	public void setIdnum(String idnum) {
 		this.idnum = idnum;
 	}
