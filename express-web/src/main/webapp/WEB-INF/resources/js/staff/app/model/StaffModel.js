@@ -1,6 +1,6 @@
 Ext.define('staff.model.StaffModel', {
 	extend : 'Ext.data.Model',
-	alias : 'widget.StaffModel',
+	alias : 'widget.staffModel',
 	fields : [ {
 		name : 'id',
 		type : 'int',
