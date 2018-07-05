@@ -52,6 +52,7 @@ public class MyFinanceDaoTest extends GenericDaoTestCase<Long,MyFinance,MyFinanc
         */
         Long id = new Long(1L);
         Optional<MyFinance> result;
+
         result = this.myFinanceDao.findById(id);
         assertEquals(result.isPresent(),true);
         System.out.println(result);
