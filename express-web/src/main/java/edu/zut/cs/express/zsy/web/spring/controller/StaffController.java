@@ -25,6 +25,11 @@ public class StaffController extends GenericController<Staff, Long, StaffManager
 		return result;
 	}
 
+	@RequestMapping(method = RequestMethod.GET, value = "/page.html")
+	public String page() {
+		String result = "/staff/page";
+		return result;
+	}
 	@Autowired
 	public void setStaffManager(StaffManager StaffManager) {
 		this.staffManager = StaffManager;
