@@ -13,7 +13,7 @@ import edu.zut.cs.express.journal.dao.UJournalDao;
 import edu.zut.cs.express.journal.daomain.UJournal;
 import edu.zut.cs.express.journal.service.UJournalManager;
 import edu.zut.cs.express.base.service.impl.GenericManagerImpl;
-
+ 
 /**
  * @author GreyYa
  * 
