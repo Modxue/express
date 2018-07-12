@@ -32,8 +32,8 @@ public class MassageManagerTest extends GenericManagerTestCase<Long, Massage, Ma
 	@Before
 	public void setUp() throws Exception {
 		Massage massage = new Massage();
-		massage.setUserid("4");
-		massage.setUsername("张三");
+		massage.setUserid("001");
+		massage.setUsername("陆零");
 		massage.setPassword("123456");
 		massage.setSex("男");
 		this.entity = this.manager.save(massage);
@@ -41,7 +41,7 @@ public class MassageManagerTest extends GenericManagerTestCase<Long, Massage, Ma
 
 	@Test
 	public void testFindByUsername() {
-		List<Massage> result = this.massageManager.findByUsername("张");
+		List<Massage> result = this.massageManager.findByUsername("陆");
 		assertNotNull(result);
 		System.out.println(result.toString());
 	}
