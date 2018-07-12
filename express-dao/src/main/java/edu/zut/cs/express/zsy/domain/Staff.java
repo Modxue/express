@@ -58,7 +58,7 @@ public class Staff extends BaseEntity {
 	public String getSex() {
 		return sex;
 	}
-
+	
 	public void setIDnum(String idnum) {
 		this.idnum = idnum;
 	}
