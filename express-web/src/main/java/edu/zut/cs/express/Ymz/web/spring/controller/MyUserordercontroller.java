@@ -27,6 +27,12 @@ public class MyUserordercontroller extends GenericController<MyUserorder, Long, 
 	        return result;
 	    }
 	
+	 @RequestMapping(method = RequestMethod.GET,value = "/order.html")
+	    public String user(){
+	        String result = "/myUserorder/order";
+	        return result;
+	    }
+	 
 	@Autowired
 	public void setUserorderManager(MyUserorderManager myUserorderManager) {
 		
